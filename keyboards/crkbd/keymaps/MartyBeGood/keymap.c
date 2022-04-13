@@ -133,7 +133,6 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
   return rotation;
 }
 
-
 #define L_BASE 0
 #define L_LOWER 2
 #define L_RAISE 4
