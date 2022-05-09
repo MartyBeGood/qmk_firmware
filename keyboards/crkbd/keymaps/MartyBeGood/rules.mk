@@ -1,4 +1,5 @@
-MOUSEKEY_ENABLE = yes    # Mouse keys
+MOUSEKEY_ENABLE = no    # Mouse keys
+EXTRAKEY_ENABLE = yes
 RGBLIGHT_ENABLE = no    # Enable WS2812 RGB underlight.
 OLED_ENABLE     = no
 OLED_DRIVER     = SSD1306
