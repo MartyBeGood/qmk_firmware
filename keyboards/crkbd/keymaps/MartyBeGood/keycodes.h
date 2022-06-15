@@ -24,12 +24,14 @@ enum custom_keycodes {
 
 #define SFT_SCLN MT(MOD_RSFT, KC_SCLN)
 #define CTL_SLSH MT(MOD_RCTL, KC_SLSH)
+#define SFT_ENT MT(MOD_RSFT, KC_ENT)
 
 #define RAI_SPC LT(_RAISE, KC_SPC)
-#define LOW_EQ LT(_LOWER, KC_EQL)
 #define RAI_ENT LT(_RAISE, KC_ENT)
+#define LOW_ESC LT(_LOWER, KC_ESC)
 #define LOW_BSP LT(_LOWER, KC_BSPC)
 #define LOW_DEL LT(_LOWER, KC_DEL)
+#define LOW_TAB LT(_LOWER, KC_TAB)
 #define ADJ_ESC LT(_ADJUST, KC_ESC)
 #define KC_ANGL LSFT(KC_COMM)
 #define KC_ANGR LSFT(KC_DOT)
