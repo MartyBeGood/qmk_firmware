@@ -6,6 +6,7 @@ enum layers {
     _RAISE,
     _ADJUST,
     _NUMPAD,
+    _GAMING,
 };
 
 enum custom_keycodes {
@@ -29,6 +30,7 @@ enum custom_keycodes {
 #define RAI_SPC LT(_RAISE, KC_SPC)
 #define RAI_ENT LT(_RAISE, KC_ENT)
 #define LOW_ESC LT(_LOWER, KC_ESC)
+#define LOW_SLS LT(_LOWER, KC_SLSH)
 #define LOW_BSP LT(_LOWER, KC_BSPC)
 #define LOW_DEL LT(_LOWER, KC_DEL)
 #define LOW_TAB LT(_LOWER, KC_TAB)
