@@ -2,11 +2,11 @@
 
 enum layers {
     _QWERTY,
+    _GAMING,
     _LOWER,
     _RAISE,
     _ADJUST,
     _NUMPAD,
-    _GAMING,
 };
 
 enum custom_keycodes {

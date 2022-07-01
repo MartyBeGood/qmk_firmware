@@ -43,6 +43,8 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t* record) {
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t* record) {
     switch (keycode) {
         case SFT_A:
+        case SFT_QT:
+        case CTL_SLSH:
             return true;
         default:
             return false;
@@ -53,7 +55,8 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t* record) {
     switch (keycode) {
         case RAI_SPC:
         case RAI_ENT:
-        case RAI_SPC:
+        case LOW_BSP:
+        case LOW_ESC:
             return true;
 
         default:
@@ -70,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                        KC_N,    KC_M, KC_COMM,  KC_DOT, CTL_SLSH,  ADJ_ESC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,  LOW_ESC,  RAI_SPC,   RAI_ENT,  LOW_BSP , KC_LALT
+                                          KC_LALT,  LOW_ESC,  RAI_SPC,   RAI_ENT,  LOW_BSP , KC_LGUI
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -103,8 +106,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4, XXXXXXX,                      XXXXXXX,   KC_7,    KC_8,     KC_9, KC_ASTR, KC_SLSH,
-  |--------+--------+--------+--------+--------+--------|                    |--------+-------+--------+---------+--------+--------|
-      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, XXXXXXX,                      XXXXXXX,   KC_4,    KC_5,     KC_6, KC_MINS, _______,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+-------+--------+---------+--------+--------|
+      _______,   KC_F5,   KC_F6,   KC_F7,   KC_F8, TG(_GAMING),                      XXXXXXX,   KC_4,    KC_5,     KC_6, KC_MINS, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+-------+--------+---------+--------+--------|
       _______,   KC_F9,  KC_F10,  KC_F11,  KC_F12, XXXXXXX,                         KC_0,   KC_1,    KC_2,     KC_3, _______, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+-------+--------+---------+--------+--------|
