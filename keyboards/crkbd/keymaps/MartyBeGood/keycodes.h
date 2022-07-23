@@ -29,11 +29,10 @@ enum custom_keycodes {
 
 #define RAI_SPC LT(_RAISE, KC_SPC)
 #define RAI_ENT LT(_RAISE, KC_ENT)
-#define LOW_ESC LT(_LOWER, KC_ESC)
 #define LOW_SLS LT(_LOWER, KC_SLSH)
+#define LOW_ESC LT(_LOWER, KC_ESC)
+#define LOW_ENT LT(_LOWER, KC_ENT)
 #define LOW_BSP LT(_LOWER, KC_BSPC)
-#define LOW_DEL LT(_LOWER, KC_DEL)
-#define LOW_TAB LT(_LOWER, KC_TAB)
 #define ADJ_ESC LT(_ADJUST, KC_ESC)
 #define KC_ANGL LSFT(KC_COMM)
 #define KC_ANGR LSFT(KC_DOT)
